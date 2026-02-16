@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empowering the Nation</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    
-    <header>
-          <div id="Heading section">
-        <h1>EMPOWERING THE NATION</h1>
-        <nav id="main-nav" aria-label="Main navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="learnership.html">Learnerships</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Mania | Empowering the Nation</title>
 
-              <div class="dropdown-content">
-                <a href="learnershipOne.html">First Aid</a>
-                <a href="learnershipTwo.html">Sewing</a>
-                <a href="learnershipThree.html">Landscaping</a>
-                <a href="learnershipFour.html">Life Skills</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="Short Courses.html">Short Courses</a>
-              <div class="dropdown-content">
-                <a href="ShortCoursesOne.html">Child Minding</a>
-                <a href="ShortCoursesTwo.html">Cooking</a>
-                <a href="ShortCoursesThree.html">Garden Maintenance</a>
-              </div>
-            </li>
-            <li><a href="booking.html">Booking</a></li>
-         
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Gym Mania</h1>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Sign Up ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="learnershipOne.html">First Aid</a></li>
+            <li><a href="learnershipTwo.html">Sewing</a></li>
+            <li><a href="learnershipThree.html">Landscaping</a></li>
+            <li><a href="learnershipFour.html">Life Skills</a></li>
           </ul>
-        </nav>
-    </header>
+        </li>
 
-      <main id="main-content">
-        <section id="our-mission">
-          <h2>Our Mission</h2>
-          <p>
-            Empowering the Nation was founded in 2018 and provides courses in
-            Johannesburg. Numerous domestic workers and gardeners have received
-            training through both the six-month Learnerships and the six-week
-            Short Skills Training Programmes to enhance their skills and
-            increase their marketability.
-          </p>
-        </section>
-      </main>
+        <li class="dropdown">
+          <a href="#">Short Courses ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="ShortCoursesOne.html">Child Minding</a></li>
+            <li><a href="ShortCoursesTwo.html">Cooking</a></li>
+            <li><a href="ShortCoursesThree.html">Garden Maintenance</a></li>
+          </ul>
+        </li>
 
-    <footer>
-      <p>Empowering The Nation</p>
-    </footer>
-  </body>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+
+    <div class="login-card">
+      <form>
+        <h3>Member Login</h3>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Empowering the Nation</h2>
+    <p>
+      Founded in 2018, we provide professional training programs in Johannesburg.
+      We empower domestic workers and gardeners with leadership and skill-based
+      courses to increase employability and personal growth.
+    </p>
+    <button class="cta-btn">Join Now</button>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Gym Mania | Empowering The Nation</p>
+</footer>
+
+</body>
 </html>
