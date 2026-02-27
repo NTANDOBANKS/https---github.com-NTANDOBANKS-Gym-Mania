@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gym Mania | Empowering the Nation</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
@@ -18,29 +17,15 @@
     <h1 class="logo">Gym Mania</h1>
 
     <nav class="navbar" aria-label="Main navigation">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
 
-        <li class="dropdown">
-          <a href="#">Sign Up ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="learnershipOne.html">First Aid</a></li>
-            <li><a href="learnershipTwo.html">Sewing</a></li>
-            <li><a href="learnershipThree.html">Landscaping</a></li>
-            <li><a href="learnershipFour.html">Life Skills</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#">Short Courses ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="ShortCoursesOne.html">Child Minding</a></li>
-            <li><a href="ShortCoursesTwo.html">Cooking</a></li>
-            <li><a href="ShortCoursesThree.html">Garden Maintenance</a></li>
-          </ul>
-        </li>
-
-        <li><a href="booking.html">Booking</a></li>
+        <li><a href="Sign Up.html">Sign Up</a></li>
       </ul>
     </nav>
 
@@ -58,19 +43,35 @@
 
 <main>
   <section class="hero">
-    <h2>Empowering the Nation</h2>
+    <h2>Gym Mania: Our Mission</h2>
     <p>
-      Founded in 2018, we provide professional training programs in Johannesburg.
-      We empower domestic workers and gardeners with leadership and skill-based
-      courses to increase employability and personal growth.
+      At Gym Mania, we believe that empowerment is the ultimate form of fitness.
+      Since our inception in 2018, we have dedicated ourselves to bridging the
+      opportunity gap in Johannesburg by providing high-impact, professional training programs
+      tailored for domestic workers and gardeners. We go beyond basic instruction, offering a unique
+      blend of leadership development and specialized skill-based courses designed to transform lives.
+      By fostering both personal growth and professional excellence, we equip our participants with the
+      confidence and expertise needed to significantly increase their employability and build a brighter, more sustainable future.
     </p>
-    <button class="cta-btn">Join Now</button>
+    <a href="Sign Up.html" class="cta-btn">Join Now</a>
   </section>
 </main>
 
 <footer>
-  <p>© 2026 Gym Mania | Empowering The Nation</p>
+  <p> 2026 Gym Mania </p>
 </footer>
+
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+  const loginCard = document.querySelector('.login-card');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    loginCard.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
